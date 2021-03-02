@@ -1,0 +1,20 @@
+.headerProfil {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login, .singup {
+    width: 90px;
+    padding: 11px 0;
+    background: #DC9BAD;
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 0.8;
+    text-align: center;
+
+}
+
+.login:hover, .singup:hover {
+    opacity: 1;
+}

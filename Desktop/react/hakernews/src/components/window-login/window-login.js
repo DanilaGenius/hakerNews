@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
+import './window-login.css'
 
-export default class App extends Component {
+export default class WindowLogin extends Component {
     render() {
         return (
             <p>Hello</p>

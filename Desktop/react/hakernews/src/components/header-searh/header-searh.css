@@ -1,0 +1,67 @@
+.headerSearch {
+    display: flex;
+    margin-right: 20px;
+}
+
+.headerSearch form {
+    position: relative;
+}
+
+.search {
+    width: 700px;
+    height: 40px;
+    padding-right: 50px;
+    font-size: 18px;
+}
+
+.clear {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    right: 0px;
+    width: 36px;
+    height: 36px;
+    opacity: 0.5;
+}
+
+.clear:hover {
+    opacity: 1;
+}
+
+.clear:after , .clear:before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 25px;
+    border-radius: 5px;
+    background: goldenrod;
+    top: 8px;
+    right: 50%;
+}
+
+
+.clear::after {
+    transform: translate(50%) rotate(-45deg);
+}
+
+.clear::before {
+    transform: translate(50%) rotate(45deg);
+}
+
+.button {
+    width: 70px;
+    height: 40px;
+    background: #DC9BAD;
+    border-end-end-radius: 5px;
+    border-start-end-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    background-image: url('./img/search.png');
+    background-repeat: no-repeat;
+    background-position: 20px 7px;
+    opacity: 0.8;
+}
+
+.button:hover {
+    opacity: 1;
+}

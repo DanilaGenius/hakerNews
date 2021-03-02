@@ -1,0 +1,24 @@
+.content-item {
+    width: 100%;
+    min-height: 50px;
+    background: #ebc9eb;
+    border-bottom: solid 0.5px grey;
+    margin: 0;
+    padding: 15px 0 0 0px;
+    position: relative;
+    display: block;
+}
+
+.likeButton {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+.bookButton {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+}
+
+
