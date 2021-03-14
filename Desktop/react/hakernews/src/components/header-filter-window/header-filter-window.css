@@ -1,0 +1,40 @@
+.filterWindow {
+    position: absolute;
+    background: #DC9BAD;
+    width: 100px;
+    min-height: 40px;
+    transition: 1s;
+    z-index: 9999;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.filterList {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.filterElem {
+    display: block;
+    padding: 5px 0;
+}
+
+.filterElem--selected {
+    background: rgb(247, 210, 210);
+}
+
+.filterElem:hover {
+    background: rgb(247, 210, 210);
+}
+
+.filterWindow--active {
+    opacity: 1;
+}

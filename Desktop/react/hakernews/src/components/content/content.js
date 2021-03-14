@@ -3,12 +3,16 @@ import ContentItem from "../content-item/content-item"
 import './content.css'
 
 
-export default class Content extends Component {
+
+class Content extends Component {
     render() {
-        return (
-            <div className="content">
-                <ContentItem />
-            </div>
-        )
+            return (
+                <div className="content">
+                        <ContentItem />   
+                </div>
+            )
     }
 }
+
+
+export default Content

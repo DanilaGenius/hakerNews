@@ -3,10 +3,11 @@ import './content-item-header.css'
 
 export default class ContentItemHeader extends Component {
     render() {
+        const {title} = this.props
         return (
             <div className="item-header">
                 <a href='/' className="header-link">
-                    The Doting Boyfriend   
+                    {title}   
                 </a>
             </div>
         )

@@ -3,10 +3,11 @@ import './content-item-info.css'
 
 export default class ContentItemInfo extends Component {
     render() {
+        const {data, autor, points, autorId} = this.props
         return (
             <p className="item-info">
-                1 day ago &nbsp;<b>|</b>&nbsp; 5 points  &nbsp;<b>|</b>&nbsp; by &nbsp;
-                <a href='/' className="info-link">nikName</a>
+                {data} &nbsp;<b>|</b>&nbsp; {points} points  &nbsp;<b>|</b>&nbsp; by &nbsp;
+                <a href={'/' + autorId} className="info-link">{autor}</a>
             </p>
         )
     }
