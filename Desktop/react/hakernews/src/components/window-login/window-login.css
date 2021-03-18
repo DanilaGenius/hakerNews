@@ -1,0 +1,81 @@
+.WindowLogin {
+    position: absolute;
+    background: rgba(176, 191, 233, 0.7);
+    max-width: 1230px;
+    width: 100%;
+    max-height: 100vh;
+    height: 100%;
+    z-index: 999;    
+    display: flex;
+    justify-content: center; 
+    align-content: center;  
+}
+
+.window {
+    display: block;
+    max-width: 250px;
+    max-height: 200px;
+    margin: 150px 0 0 0;
+    position: relative;
+    padding-right: 40px;
+}
+
+.window input {
+    display: block;
+    margin: 10px auto;
+}
+
+.form {
+    color: blanchedalmond;
+}
+
+.form__button {
+    width: 150px;
+    height: 25px;
+    background: white;
+    border-radius: 6px;
+}
+
+.form__button:hover {
+    background: blanchedalmond;
+}
+
+.textError {
+    color: crimson;
+    min-height: 20px;
+    margin: 0 auto;
+}
+
+.close {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    right: 0px;
+    width: 36px;
+    height: 36px;
+    opacity: 0.5;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:after , .close:before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 25px;
+    border-radius: 5px;
+    background: goldenrod;
+    top: 8px;
+    right: 50%;
+}
+
+
+.close::after {
+    transform: translate(50%) rotate(-45deg);
+}
+
+.close::before {
+    transform: translate(50%) rotate(45deg);
+}

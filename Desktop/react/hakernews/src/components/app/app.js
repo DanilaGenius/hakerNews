@@ -1,24 +1,30 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Header from '../header/header'
 import Content from '../content/content';
 import ListPages from '../list-pages/list-pages'
 import Footer from '../footer/footer'
+import WindowSingup from '../window-singup/window-singup'
+import WindowLogin from '../window-login/window-login'
 import './app.css'
-import { Provider } from 'react-redux'
-import store from '../../store'
+import {useSelector} from 'react-redux'
 
 
-export default class App extends Component {
-    render() {
-       return (
-        <Provider store={store}>
+
+
+
+export default function App() {
+        const singIn = useSelector(state => state.singIn)
+        const singUp = useSelector(state => state.singUp)
+        return (
             <div className="app">
+                {(singIn) && <WindowLogin /> }
+                {(singUp) && <WindowSingup /> }
+                
+
                 <Header />
                 <Content />
                 <ListPages />
                 <Footer />
             </div>
-        </Provider>
-       )
-    }
+        )
 }

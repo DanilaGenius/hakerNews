@@ -4,7 +4,9 @@ const initStore = {
     contentList: server,
     filterWindow: false,
     filterPosition: "popular",
-    searchValue: ''
+    searchValue: '',
+    singUp: false,
+    singIn: false,
 }
 
 function reducer(state = initStore, action) {
@@ -24,6 +26,19 @@ function reducer(state = initStore, action) {
             return {
                 ...state,
                 searchValue: action.searchValue,
+            }
+        case "SINGUP":
+            console.log('up', action.singUp)
+            return {
+                ...state,
+                singUp: action.singUp
+
+            }
+        case "SINGIN":
+            console.log("in", action.singIn)
+            return {
+                ...state,
+                singIn: action.singIn
             }
         default: return state
     }

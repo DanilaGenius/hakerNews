@@ -19,6 +19,20 @@ export const search = (value) => {
     }
 }
 
+export const singUp = (value) => {
+    return {
+        type: 'SINGUP',
+        singUp: value,
+    }
+}
+
+export const singIn = (value) => {
+    return {
+        type: 'SINGIN',
+        singIn: value,
+    }
+}
+
 export default filterActive
 
 
