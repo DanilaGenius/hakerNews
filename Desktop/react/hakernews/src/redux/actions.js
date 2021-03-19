@@ -33,6 +33,15 @@ export const singIn = (value) => {
     }
 }
 
+export const accLogin = (user = {}) => {
+    return {
+        type: 'LOGIN',
+        user: user,
+        logind: (user.id >= 1) ? 'on' : 'off'
+    }
+}
+
+
 export default filterActive
 
 

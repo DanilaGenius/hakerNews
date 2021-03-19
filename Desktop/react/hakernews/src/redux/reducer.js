@@ -7,6 +7,8 @@ const initStore = {
     searchValue: '',
     singUp: false,
     singIn: false,
+    user: {},
+    logind: 'off',
 }
 
 function reducer(state = initStore, action) {
@@ -28,17 +30,24 @@ function reducer(state = initStore, action) {
                 searchValue: action.searchValue,
             }
         case "SINGUP":
-            console.log('up', action.singUp)
             return {
                 ...state,
                 singUp: action.singUp
 
             }
         case "SINGIN":
-            console.log("in", action.singIn)
+            console.log(state)
             return {
                 ...state,
                 singIn: action.singIn
+            }
+        case "LOGIN":
+            console.log(state)
+            return {
+                ...state,
+                user: action.user,
+                logind: action.logind,
+                
             }
         default: return state
     }
