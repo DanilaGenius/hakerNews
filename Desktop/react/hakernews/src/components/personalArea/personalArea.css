@@ -1,0 +1,15 @@
+.lk {
+    display: block;
+    width: 100%;
+    min-height: 50vh;
+    background: rgb(247, 210, 210);
+    padding: 10px 0 0 10px;
+    margin: 0;
+}
+
+.lk__text {
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: x-large;
+}

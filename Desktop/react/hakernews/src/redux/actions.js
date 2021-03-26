@@ -41,6 +41,13 @@ export const accLogin = (user = {}) => {
     }
 }
 
+export const changePass = (newPass) => {
+    return {
+        type: 'CHANGEPASS',
+        newPass
+    }
+}
+
 
 export default filterActive
 

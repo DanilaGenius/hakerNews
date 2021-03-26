@@ -7,7 +7,7 @@ export default class ContentItemInfo extends Component {
         return (
             <p className="item-info">
                 {data} &nbsp;<b>|</b>&nbsp; {points} points  &nbsp;<b>|</b>&nbsp; by &nbsp;
-                <a href={'/' + autorId} className="info-link">{autor}</a>
+                <a href={'/profil/' + autorId} className="info-link">{autor}</a>
             </p>
         )
     }

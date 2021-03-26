@@ -46,7 +46,12 @@ function reducer(state = initStore, action) {
             return {
                 ...state,
                 user: action.user,
-                logind: action.logind,
+                logind: action.logind, 
+            }
+        case "CHANGEPASS": 
+            return {
+                
+                ...state.user.password = action.newPass
                 
             }
         default: return state
